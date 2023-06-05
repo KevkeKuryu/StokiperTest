@@ -1,7 +1,7 @@
 <platform name="android">
     <!-- your configuration elements, references, source files, etc... -->
 
-    <framework src="src/android/yourFile.gradle" custom="true" type="gradleReference" />
+    <framework src="src/android/Stokiper.gradle" custom="true" type="gradleReference" />
 
-    <resource-file src="lib/foo.aar" target="libs/Barcode.aar" />
+    <resource-file src="lib/Barcode.aar" target="libs/Barcode.aar" />
 </platform>
