@@ -4,4 +4,5 @@
     <framework src="src/android/Stokiper.gradle" custom="true" type="gradleReference" />
 
     <resource-file src="lib/Barcode.aar" target="libs/Barcode.aar" />
+    <source-file src="src/android/Stokiper.java" target-dir="src/android/Stokiper.java"/>
 </platform>
