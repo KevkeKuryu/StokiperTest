@@ -1,9 +1,7 @@
-var exec = require('cordova/exec');
-
-var Stokiper = function () {};
-
-Stokiper.prototype.read = function (successCallback, errorCallback) {
-exec(successCallback, errorCallback, 'Stokiper', 'read', []);
+var BarcodeMencurigakan = {
+    startScan: function(successCallback, errorCallback) {
+        cordova.exec(successCallback, errorCallback, "BarcodeMencurigakan", "start", []);
+    }
 };
 
-module.exports = new Stokiper();
+module.exports = BarcodeMencurigakan;
