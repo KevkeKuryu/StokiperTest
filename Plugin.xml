@@ -1,8 +1,10 @@
 <platform name="android">
-    <!-- your configuration elements, references, source files, etc... -->
-
-    <framework src="src/android/Stokiper.gradle" custom="true" type="gradleReference" />
-
-    <resource-file src="lib/Barcode.aar" target="libs/Barcode.aar" />
-    <source-file src="src/android/Stokiper.java" target-dir="src/android/Stokiper.java"/>
+<config-file parent="/*" target="res/xml/config.xml">
+<feature name="BarcodeMencurigakan">
+<param name="android-package" value="com.example.barcode_mencurigakan.BarcodeMencurigakan" />
+</feature>
+</config-file>
+        <source-file src="src/android/BarcodeMencurigakan.java" target-dir="src/com/example/barcode_mencurigakan" />
+        <framework src="com.rscja:barcode:1.0.0" />
 </platform>
+</plugin>
